@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 #coding:utf-8
 
-from prehost import find_html_ele
+from prehost.hzz_fh_ele import find_html_ele
 from config import *
 import unittest
 
@@ -13,7 +13,7 @@ class hzz_data_fh(find_html_ele):
         super().show_tree()
         super().dwzh_hzz()
         super().change_iframe('核准制业务复核')
-        for a in range(99):
+        for a in range(20):
             time.sleep(1)
             super().fuhe()
             super().fuhe_tg()
@@ -27,7 +27,7 @@ class hzz_data_fh(find_html_ele):
         super().show_tree()
         super().dwzh_hzz()
         super().change_iframe('核准制业务复核')
-        for a in range(50):
+        for a in range(10):
             super().fuhe()
             super().tuihui('退回了')
             super().tuihui_tg()

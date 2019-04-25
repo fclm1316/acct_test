@@ -10,10 +10,10 @@ from config import *
 class find_html_ele(Web_Driver_qz_1):
     def show_tree(self):
         self.driver.find_element_by_xpath('/html/body/section/div/div/div/div[2]/div/img').click()
-        self.driver.implicitly_wait(4)
+        # self.driver.implicitly_wait(4)
         time.sleep(2)
-        link1 = self.driver.find_element_by_xpath('/html/body/header/div[1]/div[1]/img[2]')
-        ActionChains(self.driver).click(link1).perform()
+        # link1 = self.driver.find_element_by_xpath('/html/body/header/div[1]/div[1]/img[2]')
+        # ActionChains(self.driver).click(link1).perform()
 
     def dwzh_hzz(self):
         #单位账户-备案制
