@@ -1,10 +1,10 @@
 #!/usr/bin/python3
 #coding:utf-8
 from selenium.webdriver import ActionChains
-from prehost import Web_Driver2
+from driver import Web_Driver_qz_2
 from config import *
 
-class find_html_ele(Web_Driver2):
+class find_html_ele(Web_Driver_qz_2):
     def show_tree(self):
         self.driver.find_element_by_xpath('/html/body/section/div/div/div/div[2]/div/img').click()
         self.driver.implicitly_wait(4)

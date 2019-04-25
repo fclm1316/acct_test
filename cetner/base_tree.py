@@ -4,11 +4,11 @@ import time
 
 from selenium.webdriver import ActionChains
 
-from cetner import Web_Driver
+from driver import Web_Driver_zx
 
 
 
-class Base_Tree(Web_Driver):
+class Base_Tree(Web_Driver_zx):
 
     def base(self):
         #基础功能

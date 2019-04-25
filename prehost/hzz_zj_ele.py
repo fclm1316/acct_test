@@ -3,11 +3,11 @@
 from selenium.webdriver import ActionChains
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.select import Select
-from prehost import Web_Driver1
+from driver import Web_Driver_qz_1
 from config import *
 
 
-class find_html_ele(Web_Driver1):
+class find_html_ele(Web_Driver_qz_1):
     def show_tree(self):
         self.driver.find_element_by_xpath('/html/body/section/div/div/div/div[2]/div/img').click()
         self.driver.implicitly_wait(4)
